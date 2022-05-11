@@ -21,7 +21,7 @@ app.post("/", function(req, res){
 // does the computation of the input variables, as numbers
     var areaCircle = Math.PI * Math.pow(radCircle, 2);
     var circumCircle = 2 * Math.PI * radCircle;
-    var volcylinder = Math.PI * (radius ** 2) * height
+    var volcylinder = Math.PI * Math.pow(radCircle, 2) * height;
 
 // sends the results back to the web page as string
   res.send("The Area of the Cirle is " + areaCircle.toFixed(2) + " and the Circumference is " + circumCircle.toFixed(2));
